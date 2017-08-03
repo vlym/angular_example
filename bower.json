@@ -1,0 +1,17 @@
+{
+  "name": "angular_example",
+  "homepage": "https://github.com/vlym/angular_example",
+  "authors": [
+    "Vic <victorlymar@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
