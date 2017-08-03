@@ -1,0 +1,17 @@
+<div class="player-container">
+    <div class="player">
+        <div class="player-inner left">
+            <div class="player-bar" ng-click="progressClick($event)">
+                <div class="progress-line" ng-style="{'width': (audio.progress | numberToPercent)}"></div>
+                <span ng-style="{'left': (audio.progress | numberToPercent)}"></span>
+            </div>
+            <div class="clearfix">
+                <span class="left">0:00</span>
+                <span class="left" style="width: 200px; height: 10px; border: 1px solid black"
+                      ng-click="progressClick($event)">{{ audio.progress | numberToPercent}}</span>
+                <span class="right">{{audio.duration | secondsToDatetime | date:'mm:ss'}}</span>
+            </div>
+        </div>
+        <a ng-click='audio.paused ? audio.play() : audio.pause()' class="act right"><i class="material-icons">{{audio.paused ? "play_circle_outline" : "pause_circle_outline" }}</i></a>
+    </div>
+</div>
